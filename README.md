@@ -1,5 +1,8 @@
 # Eco-Loop — Autonomous Building Energy & Thermal Comfort Optimization
 
+**Demo video** - https://drive.google.com/file/d/1daqd_woi1IDkgeOfha9UF0vxyyFZxEj1/view?usp=sharing
+
+
 **Eco-Loop** is a physical AI closed-loop control system that couples **EnergyPlus** (a physics-based building energy simulator) with **Llama 3.2 3B** (a local open-source LLM via Ollama) to autonomously optimize HVAC energy consumption while maintaining human thermal comfort standards.
 
 ---
