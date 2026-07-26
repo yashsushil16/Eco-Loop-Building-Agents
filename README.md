@@ -20,11 +20,11 @@
 ## Tech Stack
 
 | Domain | Technologies & Libraries |
-| :--- | :--- |
+|:---|:---|
 | **Physical Simulation** | EnergyPlus v24.1 / v26.1, `eppy` (IDF parser/modifier) |
 | **Cognitive AI Engine** | Llama 3.2 3B, Ollama, OpenAI Python SDK |
 | **Backend API Server** | Python 3.10+, FastAPI, Uvicorn, Pandas, NumPy |
-| **Frontend Web Interface** | HTML5, Vanilla CSS (Apple HIG Light Theme), Vanilla JavaScript, Chart.js |
+| **Frontend Web Interface** | HTML5, Vanilla CSS, Vanilla JavaScript, Chart.js |
 | **Version Control & Tooling** | Git, GitHub |
 
 ---
