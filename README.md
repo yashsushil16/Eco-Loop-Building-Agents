@@ -62,7 +62,7 @@ graph TD
     │   └── weather.epw            # Chicago O'Hare hourly weather profile
     └── static/
         ├── index.html             # Dashboard structure & inline SVGs
-        ├── styles.css             # Apple Light design system & component styles
+        ├── styles.css             # component styles
         └── app.js                 # API polling, Chart.js rendering, and DOM handlers
 ```
 
@@ -110,4 +110,4 @@ pip install -r requirements.txt
 
 ## License & Acknowledgments
 
-Developed for the Honeywell Hackathon. Powered by EnergyPlus, Ollama, and FastAPI.
+Developed for the Honeywell. Powered by EnergyPlus, Ollama, and FastAPI.
