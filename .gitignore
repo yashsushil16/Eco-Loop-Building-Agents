@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# EnergyPlus & Simulation Outputs
+sim_output/
+test_out/
+test_out_annual/
+test_out_annual_modified/
+test_out_short/
+*.csv
+*.eso
+*.html
+*.err
+*.rdd
+*.mdd
+*.audit
+*.eplusout
+
+# IDE & System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

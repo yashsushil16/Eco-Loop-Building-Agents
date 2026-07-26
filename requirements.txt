@@ -1,0 +1,7 @@
+eppy>=0.5.69
+openai>=2.48.0
+pandas>=2.0.0
+numpy>=1.20.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+streamlit>=1.20.0
