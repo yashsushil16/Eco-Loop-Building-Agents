@@ -4,7 +4,10 @@ import pandas as pd
 import numpy as np
 
 class EnergyPlusWrapper:
-    def __init__(self, ep_path="D:\\Programs\\energyplus\\energyplus.exe", weather_path="d:\\Honeywell Hackathon\\models\\weather.epw"):
+    def __init__(self, ep_path="D:\\Programs\\energyplus\\energyplus.exe", weather_path=None):
+        if weather_path is None:
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            weather_path = os.path.join(script_dir, "models", "weather.epw")
         self.ep_path = ep_path
         self.weather_path = weather_path
 
@@ -175,7 +178,8 @@ class EnergyPlusWrapper:
 
 if __name__ == "__main__":
     wrapper = EnergyPlusWrapper()
-    metrics = wrapper.parse_results("d:\\Honeywell Hackathon\\test_out_short\\eplusout.csv", 1, 1, 1, 7)
+    test_csv = os.path.join(os.path.dirname(os.path.abspath(__file__)), "test_out_short", "eplusout.csv")
+    metrics = wrapper.parse_results(test_csv, 1, 1, 1, 7)
     print("Test run parse results:")
     print(f"Electricity: {metrics['electricity_kwh']:.2f} kWh")
     print(f"Gas: {metrics['gas_kwh']:.2f} kWh")

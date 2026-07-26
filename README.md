@@ -44,21 +44,23 @@ graph TD
 ## Project Structure
 
 ```
-├── server.py                  # FastAPI server handling API endpoints & background optimization loop
-├── cognitive_engine.py        # LLM closed-loop optimization orchestrator
-├── mcp_tools.py               # Building simulation tools & metric calculation
-├── energyplus_wrapper.py      # EnergyPlus subprocess execution & CSV parser
-├── idf_modifier.py            # IDF setpoint & occupancy modifier using eppy
-├── system_architecture.md     # Detailed architecture & latency mitigation report
-├── requirements.txt           # Python dependency requirements
-├── .gitignore                 # Excludes simulation output CSVs and temp files
-├── models/
-│   ├── baseline.idf           # DOE Commercial Reference Building (Small Office) model
-│   └── weather.epw            # Chicago O'Hare hourly weather profile
-└── static/
-    ├── index.html             # Dashboard structure & inline SVGs
-    ├── styles.css             # Apple Light design system & component styles
-    └── app.js                 # API polling, Chart.js rendering, and DOM handlers
+├── README.md
+└── source code and building models/
+    ├── server.py                  # FastAPI server handling API endpoints & background optimization loop
+    ├── cognitive_engine.py        # LLM closed-loop optimization orchestrator
+    ├── mcp_tools.py               # Building simulation tools & metric calculation
+    ├── energyplus_wrapper.py      # EnergyPlus subprocess execution & CSV parser
+    ├── idf_modifier.py            # IDF setpoint & occupancy modifier using eppy
+    ├── system_architecture.md     # Detailed architecture & latency mitigation report
+    ├── requirements.txt           # Python dependency requirements
+    ├── .gitignore                 # Excludes simulation output CSVs and temp files
+    ├── models/
+    │   ├── baseline.idf           # DOE Commercial Reference Building (Small Office) model
+    │   └── weather.epw            # Chicago O'Hare hourly weather profile
+    └── static/
+        ├── index.html             # Dashboard structure & inline SVGs
+        ├── styles.css             # Apple Light design system & component styles
+        └── app.js                 # API polling, Chart.js rendering, and DOM handlers
 ```
 
 ---
@@ -78,7 +80,7 @@ graph TD
 Clone this repository and install Python packages:
 ```bash
 git clone https://github.com/yashsushil16/Eco-Loop-Building-Agents.git
-cd Eco-Loop-Building-Agents
+cd "Eco-Loop-Building-Agents/source code and building models"
 pip install -r requirements.txt
 ```
 
@@ -88,6 +90,7 @@ pip install -r requirements.txt
 
 1. **Start the FastAPI Backend Server**:
    ```bash
+   cd "source code and building models"
    python server.py
    ```
 2. **Access the Web Dashboard**:

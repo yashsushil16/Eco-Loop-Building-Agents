@@ -114,10 +114,10 @@ SizingPeriod:DesignDay,
 
 RunPeriod,
     Annual,                   !- Name
-    1,                        !- Begin Month
+    7,                        !- Begin Month
     1,                        !- Begin Day of Month
     ,                         !- Begin Year
-    1,                        !- End Month
+    7,                        !- End Month
     7,                        !- End Day of Month
     ,                         !- End Year
     Sunday,                   !- Day of Week for Start Day
@@ -653,47 +653,47 @@ Schedule:Compact,
     Temperature,              !- Schedule Type Limits Name
     Through: 12/31,           !- Field 1
     For: Weekdays SummerDesignDay,    !- Field 2
-    Until: 06:00,             !- Field 3
-    26.5,                     !- Field 4
-    Until: 21:00,             !- Field 5
-    22.0,                     !- Field 6
+    Until: 07:00,             !- Field 3
+    28.0,                     !- Field 4
+    Until: 20:00,             !- Field 5
+    24.8,                     !- Field 6
     Until: 24:00,             !- Field 7
-    26.5,                     !- Field 8
+    28.0,                     !- Field 8
     For: Saturday,            !- Field 9
-    Until: 06:00,             !- Field 10
-    26.5,                     !- Field 11
+    Until: 07:00,             !- Field 10
+    28.0,                     !- Field 11
     Until: 18:00,             !- Field 12
-    22.0,                     !- Field 13
+    24.8,                     !- Field 13
     Until: 24:00,             !- Field 14
-    26.5,                     !- Field 15
+    28.0,                     !- Field 15
     For: AllOtherDays,        !- Field 16
     Until: 24:00,             !- Field 17
-    26.5;                     !- Field 18
+    28.0;                     !- Field 18
 
 Schedule:Compact,
     HTGSETP_SCH,              !- Name
     Temperature,              !- Schedule Type Limits Name
     Through: 12/31,           !- Field 1
     For: Weekdays,            !- Field 2
-    Until: 06:00,             !- Field 3
-    12.0,                     !- Field 4
-    Until: 21:00,             !- Field 5
-    20.5,                     !- Field 6
+    Until: 07:00,             !- Field 3
+    15.0,                     !- Field 4
+    Until: 20:00,             !- Field 5
+    21.2,                     !- Field 6
     Until: 24:00,             !- Field 7
-    12.0,                     !- Field 8
+    15.0,                     !- Field 8
     For: Saturday,            !- Field 9
-    Until: 06:00,             !- Field 10
-    12.0,                     !- Field 11
+    Until: 07:00,             !- Field 10
+    15.0,                     !- Field 11
     Until: 18:00,             !- Field 12
-    20.5,                     !- Field 13
+    21.2,                     !- Field 13
     Until: 24:00,             !- Field 14
-    12.0,                     !- Field 15
+    15.0,                     !- Field 15
     For: WinterDesignDay,     !- Field 16
     Until: 24:00,             !- Field 17
-    20.5,                     !- Field 18
+    21.2,                     !- Field 18
     For: AllOtherDays,        !- Field 19
     Until: 24:00,             !- Field 20
-    12.0;                     !- Field 21
+    15.0;                     !- Field 21
 
 Material,
     Mass NonRes Wall Insulation,    !- Name

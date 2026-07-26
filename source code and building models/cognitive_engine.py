@@ -15,9 +15,7 @@ class BuildingCognitiveEngine:
         self.tools = BuildingAgentTools()
 
     def query_llm(self, prompt):
-        """
-        Sends the prompt to Ollama LLM and returns the response.
-        """
+        
         try:
             print(f"Sending prompt to local LLM ({self.model_name})...")
             response = self.client.chat.completions.create(
@@ -173,19 +171,18 @@ Reasoning: Since the average PMV in Trial 1 was -0.88, the building was too cold
         best_score = float('inf')
         best_run = None
 
-        # 2. Iterate Optimization Loop
         for i in range(iterations):
             print(f"\n--- Iteration {i+1} of {iterations} ---")
             prompt = self.build_prompt(season, start_month, start_day, end_month, end_day, history, baseline_metrics)
             
-            # Query LLM
+           
             llm_response = self.query_llm(prompt)
             
-            # Parse parameters
+            
             params = self.parse_llm_json(llm_response)
             if not params:
                 print("Failed to get valid JSON from LLM. Retrying with a simpler request...")
-                # Fallback to default baseline changes
+                
                 params = {
                     "cool_occ": 24.5 if season == "summer" else 24.0,
                     "cool_unocc": 27.5 if season == "summer" else 26.7,

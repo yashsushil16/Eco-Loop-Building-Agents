@@ -5,7 +5,9 @@ from idf_modifier import IDFModifier
 from energyplus_wrapper import EnergyPlusWrapper
 
 class BuildingAgentTools:
-    def __init__(self, workspace_dir="d:\\Honeywell Hackathon"):
+    def __init__(self, workspace_dir=None):
+        if workspace_dir is None:
+            workspace_dir = os.path.dirname(os.path.abspath(__file__))
         self.workspace_dir = workspace_dir
         self.models_dir = os.path.join(workspace_dir, "models")
         self.output_dir = os.path.join(workspace_dir, "sim_output")
@@ -39,7 +41,7 @@ class BuildingAgentTools:
                 end_day
             )
             
-            # 2. Inject setpoints
+           
             self.modifier.update_setpoints(
                 temp_idf_prepared, 
                 run_idf, 

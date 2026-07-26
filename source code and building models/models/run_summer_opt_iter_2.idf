@@ -114,10 +114,10 @@ SizingPeriod:DesignDay,
 
 RunPeriod,
     Annual,                   !- Name
-    1,                        !- Begin Month
+    7,                        !- Begin Month
     1,                        !- Begin Day of Month
     ,                         !- Begin Year
-    1,                        !- End Month
+    7,                        !- End Month
     7,                        !- End Day of Month
     ,                         !- End Year
     Sunday,                   !- Day of Week for Start Day
@@ -656,14 +656,14 @@ Schedule:Compact,
     Until: 07:00,             !- Field 3
     27.5,                     !- Field 4
     Until: 20:00,             !- Field 5
-    24.5,                     !- Field 6
+    25.0,                     !- Field 6
     Until: 24:00,             !- Field 7
     27.5,                     !- Field 8
     For: Saturday,            !- Field 9
     Until: 07:00,             !- Field 10
     27.5,                     !- Field 11
     Until: 18:00,             !- Field 12
-    24.5,                     !- Field 13
+    25.0,                     !- Field 13
     Until: 24:00,             !- Field 14
     27.5,                     !- Field 15
     For: AllOtherDays,        !- Field 16

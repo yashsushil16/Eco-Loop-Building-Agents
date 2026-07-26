@@ -15,7 +15,8 @@ from mcp_tools import BuildingAgentTools
 app = FastAPI(title="Eco-Loop Building Optimization API")
 
 # Workspace paths
-output_dir = "d:\\Honeywell Hackathon\\sim_output"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+output_dir = os.path.join(BASE_DIR, "sim_output")
 os.makedirs(output_dir, exist_ok=True)
 summary_path = os.path.join(output_dir, "summary.json")
 
